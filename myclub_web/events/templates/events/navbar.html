@@ -1,0 +1,135 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="{% url 'home' %}">WebClub</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="{% url 'list-events' %}"
+            >Events</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'home' '2023' 'March'  %}">March</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Season
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="dropdown-item" href="{% url 'home' '2023' 'January'  %}"
+                >January</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="{% url 'home' '2023' 'February'  %}"
+                >February</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="{% url 'home' '2023' 'March'  %}"
+                >March</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="{% url 'home' '2023' 'April'  %}"
+                >April</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="{% url 'home' '2023' 'May'  %}"
+                >May</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="{% url 'home' '2023' 'June'  %}"
+                >June</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="{% url 'home' '2023' 'July'  %}"
+                >July</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="{% url 'home' '2023' 'August'  %}"
+                >August</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="{% url 'home' '2023' 'September'  %}"
+                >September</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="{% url 'home' '2023' 'Octobor'  %}"
+                >Octobor</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="{% url 'home' '2023' 'November'  %}"
+                >November</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item"
+                href="{% url 'home' '2023' 'December'  %}"
+                >December</a
+              >
+            </li>
+
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="{% url 'home' %}">This Season</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            aria-current="page"
+            href="{% url 'add-venue' %}"
+            >Venue</a
+          >
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
